@@ -2,36 +2,36 @@ package ficheTD3;
 
 public class Point {
 	private float abcisse;
-	private float ordonnée;
+	private float ordonnÃ©e;
 
 	public Point() {
 		this.abcisse = 0;
-		this.ordonnée = 0;
+		this.ordonnÃ©e = 0;
 	}
 
 	Point(float abcisse) {
 		this.abcisse = abcisse;
-		this.ordonnée = abcisse;
+		this.ordonnÃ©e = abcisse;
 	}
 
-	Point(float abcisse, float ordonnée) {
+	Point(float abcisse, float ordonnÃ©e) {
 		this.abcisse = abcisse;
-		this.ordonnée = ordonnée;
+		this.ordonnÃ©e = ordonnÃ©e;
 	}
 
 	public float getAbcisse() {
 		return abcisse;
 	}
 
-	public float getOrdonnée() {
-		return ordonnée;
+	public float getOrdonnÃ©e() {
+		return ordonnÃ©e;
 	}
 
-	public String symértie(Point p) {
+	public String symÃ©rtie(Point p) {
 
 		if (p.abcisse != 0)
 			p.abcisse = -abcisse;
-		return "(" + p.abcisse + "," + p.ordonnée + ")";
+		return "(" + p.abcisse + "," + p.ordonnÃ©e + ")";
 
 	}
 
@@ -39,7 +39,8 @@ public class Point {
 		this.abcisse = abcisse;
 	}
 
-	public void setOrdonnée(float ordonnée) {
-		this.ordonnée = ordonnée;
+	public void setOrdonnÃ©e(float ordonnÃ©e) {
+		this.ordonnÃ©e = ordonnÃ©e;
 	}
 }
+//un autre dÃ©pot
