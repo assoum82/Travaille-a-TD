@@ -21,7 +21,7 @@ public class Client {
 			}
 
 			else
-				System.err.print("échec de la création du compte");
+				System.err.print("Ã©chec de la crÃ©ation du compte");
 
 		} else
 			creatAuto(cp, nbcmp);
@@ -35,7 +35,7 @@ public class Client {
 	}
 
 	public static void main(String[] args) {
-		// *reserver à la banque
+		// *reserver Ã  la banque
 
 		Client[] ct = new Client[10000]; // 10000 nombre de client
 		for (int count = 0; count < ct.length; count++) {
@@ -54,11 +54,11 @@ public class Client {
 				System.out.println("");
 				System.out.print("\n               Menu           ");
 				System.out.print(" \n     -------------------------");
-				System.out.print("\n       ||1)Crée un  compte||");
+				System.out.print("\n       ||1)CrÃ©e un  compte||");
 				System.out.print("\n       ||2)|depot         ||");
 				System.out.print("\n       ||3)|retrait       ||");
 				System.out.print("\n       ||4)afficher compte||");
-				System.out.print("\n       ||5)quitté         ||");
+				System.out.print("\n       ||5)quittÃ©         ||");
 				System.out.println(" \n      ------------------------");
 				System.out.print("\n>");
 
@@ -66,7 +66,7 @@ public class Client {
 				case 1:
 
 					ct[nbClient].c_compte(cp, nbcmp);
-					System.out.println("compte crée avec succées");
+					System.out.println("compte crÃ©e avec succÃ©es");
 					cp[nbcmp].afficher(nbcmp);
 					nbcmp++;
 					nbClient++; // peut etre acceder que par la banque
@@ -119,7 +119,7 @@ public class Client {
 						cp[count].afficher(count);
 						totsold += cp[count].getSolde();
 					}
-					System.out.println("le compte du client nommé "
+					System.out.println("le compte du client nommÃ© "
 							+ cp[0].getNom() + "est de " + totsold);
 					break;
 				case 5:
@@ -135,3 +135,4 @@ public class Client {
 	}
 
 }
+//
